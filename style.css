@@ -1,0 +1,859 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,500;1,500&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background: #1f1517;
+    color: #FFFFFF;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+nav { 
+    max-width: 1120px;
+    margin: auto; 
+    padding: 1.5rem 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    color:#FFFFFF;
+    font-family: Teko;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: -8rem;
+}
+.menu-principal {
+    display: flex;
+    gap: 1.5rem;
+    
+}
+.menu-principal a{ 
+    color: #FFF2E780;
+    display: inline-block;
+}
+
+.menu-principal a:hover{ 
+    color: #FFF2E7;
+    transform: scale(1.1);
+}
+
+.github { 
+    color: #FFF2E7;
+    font-weight: 600;
+    margin-right: -8.5rem;
+}
+main { 
+    display: flex;
+    flex-direction: column;
+}
+.principal {
+    background: #181012;
+}
+
+.hero { 
+    max-width: 1120px;
+    height: 60vh;
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    gap: 6rem; 
+    padding: 0rem 2rem;
+    margin: auto;
+    overflow: clip;
+    align-items: center;
+    
+}
+
+.hero-conteudo { 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 39vh;
+    
+}
+.destaque { 
+    font-family: Epilogue;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.marrom { 
+    color: #A45A49; 
+}
+.amarelo { 
+    color: #E7A80E; 
+}
+
+h1{ 
+    font-family: Montserrat;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-right: -1.9rem;
+}
+.h1-receitas{
+    font-family: Montserrat;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+hr{ 
+    border-color: #A45A49;
+}
+
+.hero-subtitulo {
+    color: #C7BAB3;
+    font-family: Inter;
+    font-size: 1.4rem ;
+    font-weight: 400;
+}
+.receitas-subtitulo{
+    font-family: Inter;
+    color: #C7BAB3;
+    font-size: 1rem;
+}
+
+.hero-imagens-container { 
+    max-width: 100%;
+    column-count: 4;
+    column-gap: 1rem;
+    margin: -1rem;
+    width: 100%;
+
+}
+.hero-imagens-container > figure > img { 
+    width: 100%;
+    border-radius: 0.5rem;
+
+}
+.hero-detalhes{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    background-color: #1f1517;
+    width:50%;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    height: 35vh;
+    margin-right: -1rem;
+    align-items: center;
+    margin-top: -3rem;
+
+
+}
+.hero-detalhes-range { 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.hero-detalhes-range > p{ 
+    font-family: Montserrat;
+    font-size: 1rem;
+    color: #FFF2E7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    ;
+}
+.progress-section { 
+    display: flex;
+    flex-direction: row;
+}
+.linha{ width: 6rem; 
+    height: 0.25rem;
+    border-radius: 0.25rem;
+    background-color: #756A67; 
+    margin-right: 8px; 
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+.painted { 
+    background-color: #A45A49; 
+}
+
+.hero-detalhes-avaliacao{ 
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 2.4rem;
+    margin-left: -11.5rem;
+    gap: 2.6rem; 
+}
+.hero-detalhes-avaliacao > p { 
+    font-family: Inter;
+    font-size: 1rem;
+    color: #756A67;
+    text-align: right;
+}
+
+.botao-container{
+    width: 100%;
+    max-width: 1120px;
+    margin: auto;
+    transform: translate('0, -50'); 
+    margin-top: -3rem; 
+    margin-left: 11.5rem;  
+}
+
+button {
+    border: none; 
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: #A45A49;
+}
+
+.receitas { 
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    padding: 3rem 2rem;
+    margin: auto;
+}
+
+.receitas-cabecalho { 
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+
+.receitas-titulo { 
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFF2E7;
+}
+
+.receitas-subtitulo { 
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #C7BAB3;
+    padding-bottom: 2rem;
+}
+
+.receitas-card-container { 
+    padding: 0rem 0rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.receitas-card { 
+    background: #241A1C;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-basis: 29rem;
+    
+}
+
+.receitas-card-cabecalho { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.receitas-card-cabecalho-detalhes { 
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; 
+}
+.receitas-titulo { 
+    color: #FFF2E7;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.receitas-avaliacao { 
+    color: #756A67; 
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.receitas-descricao { 
+    color: #C7BAB3;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.receitas-autor{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem; 
+}
+.membro { 
+    display: flex;
+    flex-direction: column;
+}
+.membro-tempo{ 
+   font-size: 0.875rem; 
+   color: #756A67;
+}
+
+.receitas-autor > img { 
+    border-radius: 20rem;
+    width: 2rem;   
+}
+
+.receitas-autor-nome { 
+    color: #C7BAB3;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.pag-receitas { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem; 
+    margin: 3rem;
+    align-items: right;
+    height: 60vh;
+    margin-left: 10rem;
+}
+
+.modo-de-preparo{
+    background: #23181A;
+    padding: 1.5rem;
+    height: 40vh;
+    margin-right: -1rem;
+    align-items: center;
+    margin-top: -3rem;
+    border-radius: 0.5rem;
+}
+.modo-de-preparo-header{
+    margin-bottom: 1rem;
+}
+.modo-de-preparo-header > h2 { 
+    font-family: Montserrat;
+    font-size: 1.5rem;
+}
+
+.modo-de-preparo-header > p { 
+    color: #C7BAB3; 
+    font-family: Inter; 
+    font-size: 1rem;
+}
+
+.lista-passo-a-passo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    
+}
+.lista-numeros{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.lista-numeros > span{
+    border: none; 
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background: #A45A49;
+    text-align: center;
+    width: 2rem;
+}
+
+.passo-a-passo{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.passo-a-passo > p { 
+    color: #C7BAB3; 
+    font-family: Inter; 
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.ingredientes{ 
+    background: #23181A;
+    padding: 1.5rem;
+    height: 40vh;
+    margin-right: -1rem;
+    align-items: center;
+    margin-top: -3rem;
+    border-radius: 0.5rem;
+}
+
+.ingredientes-header{
+    margin-bottom: 2rem;
+}
+.ingredientes-header > h2 { 
+    font-family: Montserrat;
+    font-size: 1.5rem;
+}
+
+.ingredientes-header > p { 
+    color: #C7BAB3; 
+    font-family: Inter; 
+    font-size: 1rem;
+}
+.ingredientes-checkbox{
+    display: flex;
+    flex-direction: row;
+    font-family: Inter;
+    font-size: 1rem;
+    color: #C7BAB3; 
+}
+
+.ingredientes-checkbox-box{ 
+    width: 10rem;
+    border: none;
+    
+}
+#cafe-soluvel:checked, #leite-desnatado:checked, #chocolate-em-po:checked, #canela:checked{
+    background-image: url(images/Checkbox.png);
+    width: 1rem;
+    height: 1rem;
+    border: none;
+}
+
+.ingredientes-checkbox-quantidade{ 
+    display: flex;
+    flex-direction: column;
+    float: right;
+    text-align: right;
+    margin-left: 7rem;
+    color: #A45A49;
+}
+.ingredientes-checkbox input[type="checkbox"]{
+    -webkit-appearance: none; /* Remove o estilo padrão do navegador */
+    -moz-appearance: none;
+    appearance: none;
+    width: 1rem; /* Define a largura do botão de rádio */
+    height: 1rem; /* Define a altura do botão de rádio */
+    border-radius: 20%; /* Torna o botão de rádio circular */
+    border: 2px solid #38282B; /* Adiciona uma borda ao redor do botão de rádio */
+    outline: none; /* Remove a borda de foco padrão */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão de rádio */
+    background-color: #2E2023;
+ }
+
+.footer{ 
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background: #23181A;
+}
+.footer-copy { 
+    color: #FFF2E7;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+    
+}
+
+.footer-autor { 
+    color: rgba(255, 242, 231, 0.50);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.footer-novidades { 
+    margin-top: 10vh;
+}
+
+
+/*pagina novidades */
+.novidades-hero{
+    max-width: 1120px;
+    background-image: url(images/background-novidade.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+.novidades { 
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem; 
+    margin: 1rem 4rem;
+    padding: 6rem;
+}
+.outros { 
+    padding-top: 1rem;
+}
+
+.cafegelado{ 
+    margin-top: 10rem;
+}
+
+.novidades-conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1120px;
+    padding: 3rem 2rem;
+    margin: auto;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: auto;
+
+}
+.novidades-conteiner-cards {
+    background: #23181A;
+    padding: 1rem;
+    height: 20rem;
+    margin-top: -3rem;
+    border-radius: 0.5rem;
+    width: 12rem;
+    margin-bottom: 3rem;
+}
+
+.americano:hover { 
+    background-image: url(images/coffeeAmericano.jpg);
+    background-color: transparent;
+    width: 12rem;
+    background-repeat: no-repeat;
+    height: 20rem;
+    transform: scale(1.1);
+    transition: 1s; 
+}
+.semconteudo1{ 
+    background: url(images/cafeSendoTriiturado.jpg); 
+}
+
+.semconteudo1:hover{ 
+    transform: scale(1.1);
+    transition: 1s; 
+}
+.cortado:hover { 
+    background-image: url(images/coffeeCortado.jpg);
+    background-color: transparent;
+    width: 12rem;
+    background-repeat: no-repeat;
+    height: 20rem;
+    transform: scale(1.1);
+    transition: 1s; 
+}
+
+.semconteudo2{
+    background-image: url(images/cafe.jpg);
+}
+
+.semconteudo2:hover{ 
+    transform: scale(1.1);
+    transition: 1s; 
+}
+.cappuccino:hover {
+    background-image: url(images/coffeeCappuccino.jpg);
+    background-color: transparent;
+    width: 12rem;
+    background-repeat: no-repeat;
+    height: 20rem;
+    transform: scale(1.1);
+    transition: 1s; 
+}
+.latte:hover { 
+    background-image: url(images/coffeeLattee.jpg);
+    background-color: transparent;
+    width: 12rem;
+    background-repeat: no-repeat;
+    height: 20rem;
+    transform: scale(1.1);
+    transition: 1s; 
+}
+.mocha:hover { 
+    background-image: url(images/coffeeMocha.jpg);
+    background-color: transparent;
+    width: 12rem;
+    background-repeat: no-repeat;
+    height: 20rem;
+    transform: scale(1.1);
+    transition: 1s; 
+}
+
+.semconteudo3{
+    background-image: url(images/cafeComFumaca.jpg);
+}
+
+.semconteudo3:hover{ 
+    transform: scale(1.1);
+    transition: 1s; 
+}
+
+.espresso:hover { 
+    background-image: url(images/coffeeEspresso.jpg);
+    background-color: transparent;
+    width: 12rem;
+    background-repeat: no-repeat;
+    height: 20rem;
+    transform: scale(1.1);
+    transition: 1s; 
+}
+
+.caramelatte:hover {
+    background-image: url(images/coffeCaramelatte.jpg);
+    background-color: transparent;
+    width: 12rem;
+    background-repeat: no-repeat;
+    height: 20rem;
+    transform: scale(1.1);
+    transition: 1s; 
+}
+.frappe-latte:hover{ 
+    background-image: url(images/frappe-latte.jpg);
+    background-color: transparent;
+    width: 12rem;
+    background-repeat: no-repeat;
+    height: 20rem;
+    transform: scale(1.1);
+    transition: 1s; 
+}
+
+.iced-latte:hover{
+    background-image: url(images/iced-latte.jpg);
+    background-color: transparent;
+    width: 12rem;
+    background-repeat: no-repeat;
+    height: 20rem;
+    transform: scale(1.1);
+    transition: 1s; 
+}
+
+.iced-coconut-latte:hover{
+    background-image: url(images/iced-coconut-latte.jpg);
+    background-color: transparent;
+    width: 12rem;
+    background-repeat: no-repeat;
+    height: 20rem;
+    transform: scale(1.1);
+    transition: 1s; 
+}
+
+.mocha-Frappe-latte:hover{
+    background-image: url(images/mocha-Frappe-latte.jpg);
+    background-color: transparent;
+    width: 12rem;
+    background-repeat: no-repeat;
+    height: 20rem;
+    transform: scale(1.1);
+    transition: 1s; 
+}
+
+.expresso-caramel:hover{
+    background-image: url(images/expresso-caramel.jpg);
+    background-color: transparent;
+    width: 12rem;
+    background-repeat: no-repeat;
+    height: 20rem;
+    transform: scale(1.1);
+    transition: 1s; 
+}
+.marshmallows-h2{
+    font-size: 0.5rem;
+}
+.marshmallows:hover{
+    background-image: url(images/marshmallows.jpg);
+    background-color: transparent;
+    width: 12rem;
+    background-repeat: no-repeat;
+    height: 20rem;
+    transform: scale(1.1);
+    transition: 1s; 
+}
+
+.vanilla-syrup:hover{
+    background-image: url(images/vanilla-syrup.jpg);
+    background-color: transparent;
+    width: 12rem;
+    background-repeat: no-repeat;
+    height: 20rem;
+    transform: scale(1.1);
+    transition: 1s; 
+}
+.semconteudo4{
+    background-image: url(images/imgcafe-outros1.jpg);
+}
+
+.semconteudo4:hover{ 
+    transform: scale(1.1);
+    transition: 1s; 
+}
+.whipped-cream:hover { 
+    background-image: url(images/whipped-cream.jpg);
+    background-color: transparent;
+    width: 12rem;
+    background-repeat: no-repeat;
+    height: 20rem;
+    transform: scale(1.1);
+    transition: 1s; 
+}
+.semconteudo5{
+    background-image: url(images/imgcafe-outros2.jpg);
+}
+
+.semconteudo5:hover{ 
+    transform: scale(1.1);
+    transition: 1s; 
+}
+
+.novidades-conteiner-cards-header { 
+    text-align: left;
+    opacity: 1;
+}
+
+.novidades-conteiner-cards:hover .novidades-conteiner-cards-header {
+    opacity: 0;
+}
+
+.novidades-conteiner-cards:hover .novidades-conteiner-cards-imagens {
+    opacity: 0;
+}
+
+.novidades-conteiner-cards-header > h2{
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    color: #FFF2E7;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+.novidades-conteiner-cards-header > p { 
+    font-family: Inter;
+    font-size: 1rem;
+    color: #C7BAB3;
+}
+
+.novidades-conteiner-cards-imagens { 
+    margin-top: 2rem;
+}
+
+.novidades-imagens{ 
+    width: 20%;
+}
+/*pagina novidades*/ 
+/*pagina avalaiar*/ 
+
+fieldset{
+    border: none;
+}
+
+input, select, textarea{
+    border-radius: 5px;
+}
+.hero-avaliar{ 
+    background-image: url(images/fundocafe.jpg);
+    width: 100%;
+
+}
+
+.campo{
+    padding-bottom: 0.5rem;
+}
+.campo label, .caixa-de-texto label{
+    font-family: Inter;
+    font-size: 1rem;
+    color: #C7BAB3;
+    margin-top: auto;
+}
+.campo input[type="text"],.campo input[type="email"],.campo select, .caixa-de-texto textarea{
+    background: #2E2023;
+    border: 2px solid #38282B;
+    display: inline-block;
+    color: #FFF2E7;
+}
+
+.campo select, .campo textarea { 
+    color: #C7BAB3;
+}
+.campo input[type="radio"], .campo input[type="checkbox"]{
+    -webkit-appearance: none; /* Remove o estilo padrão do navegador */
+    -moz-appearance: none;
+    appearance: none;
+    width: 1rem; /* Define a largura do botão de rádio */
+    height: 1rem; /* Define a altura do botão de rádio */
+    border-radius: 20%; /* Torna o botão de rádio circular */
+    border: 2px solid #38282B; /* Adiciona uma borda ao redor do botão de rádio */
+    outline: none; /* Remove a borda de foco padrão */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão de rádio */
+    background-color: #2E2023;
+}
+#devweb1:checked,#devweb2:checked,#devweb3:checked, #tecnologia1:checked, #tecnologia2:checked, #tecnologia3:checked ,#tecnologia4:checked, #tecnologia5:checked, #tecnologia6:checked, #tecnologia7:checked{
+    background-image: url(images/Checkbox.png);
+    width: 1rem;
+    height: 1rem;
+    border: none;
+}
+
+.campo input[type="range"] {
+    -webkit-appearance: none; /* Remove o estilo padrão do navegador */
+    -moz-appearance: none;
+    appearance: none;
+    width: 30rem;
+    height: 0.3rem;
+    border-radius: 5%; /* Torna o botão de rádio circular */
+    border: 2px solid #38282B; /* Adiciona uma borda ao redor do botão de rádio */
+    background-color: #2E2023;
+    color: #A45A49;
+}
+#caferange::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove a aparência padrão do navegador */
+    width: 20px; /* Define a largura da bolinha */
+    height: 20px; /* Define a altura da bolinha */
+    background: #A45A49; /* Cor da bolinha */
+    border-radius: 50%; /* Torna a bolinha circular */
+    cursor: pointer; /* Altera o cursor ao passar sobre a bolinha */
+}
+.cafe-range-rate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    color:  #C7BAB3;;
+}
+.caixa-de-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+#botao-avaliacao{ 
+    margin-top: 1rem;
+    display: flex;
+    margin-left: 11rem;
+    
+}
+
+
+/*pagina avalaiar=*/ 

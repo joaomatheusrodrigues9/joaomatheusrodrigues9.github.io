@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMR coffee (Avaliaçāo)</title>
+    <meta name="description" content="Receitas de todos os cafés ao redor do mundo">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo"> JMR Coffee</a>
+            <ul class="menu-principal">
+                <li><a href="index.html">Home </a></li>
+                <li><a href="receitas.html">Receitas</a></li>
+                <li><a href="novidades.html">Novidades</a></li>
+                <li><a href="avaliar.html">Avaliar</a></li>
+                </ul>
+                <a href="https://www.instagram.com/joao.matheus.r/" class="github"> Github</a>
+        </nav>
+    </header>
+    <div class="principal">
+        <div class="hero ">
+            <header class="hero-conteudo">
+                <h1 class="titulo">Deixe aqui sua avaliaçāo</h1>
+                <h2 class="hero-subtitulo">Cadastre-se e deixe a sua opniāo</h2>
+            </header>
+            <form class="formulario" >
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" required/>
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" name="sobrenome" id="sobrenome" required/>
+                    </div>
+                </fieldset>
+                <div class="campo inicio">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="senioridade">Senioridade:</label>
+                    <select id="senioridade">
+                        <option selected disabled value="">Selecione</option>
+                        <option>Junior</option>
+                        <option>Pleno</option>
+                        <option>Senior</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label>De qual lado da aplicaçāo você desenvolve: </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="devweb" id="devweb1" value="front-end" > Front-end
+                    </label>
+                    <label>
+                        <input type="radio" name="devweb" id="devweb2" value="back-end"> Back-end 
+                    </label>
+                    <label>
+                        <input type="radio" name="devweb" id="devweb3" value="fullstack"> Full stack  
+                    </label>
+                </div>
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label> Selecione as tecnologias que utiliza: </label>
+                        <br>
+                        <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                        <label for="tecnologia1">HTML </label>
+                        <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                        <label for="tecnologia2">CSS</label>
+                        <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript">
+                        <label for="tecnologia3">JavaScript</label>
+                        <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                        <label for="tenologia4">PHP</label>
+                        <input type="checkbox" id="tecnologia5" name="tenologia5" value="C#">
+                        <label for="tenologia5">C#</label>
+                        <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+                        <label for="tecnologia6">Python</label>
+                        <input type="checkbox" name="tecnologia7" id="tecnologia7" value="Java">
+                        <label for="tenologia7">Java</label>
+                    </div>
+                    <div class="campo">
+                        <label>Escolha aqui seu café favorito: </label>
+                        <select id="escolha-cafe-favorito">
+                            <option selected disabled value="">Selecione</option>
+                            <option>Americano</option>
+                            <option>Cortado</option>
+                            <option>Cappuccino</option>
+                            <option>Latte</option>
+                            <option>Mocha</option>
+                            <option>Expresso</option>
+                            <option>Caramellate</option>
+                            <option>Frappe Latte</option>
+                            <option>Iced Latte </option>
+                            <option>Iced Coconut Latte</option>
+                            <option>Mocha Frappe Latte</option>
+                            <option>Expresso & Caramel Frappe Creme</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label>Deixe aqui uma nota para sua experiência com o seu café: </label>
+                        <input type="range" name="caferange" id="caferange" min="1" max="4" step="1">
+                        <div class="cafe-range-rate">
+                            <p>Regular</p>
+                            <p>Bom</p>
+                            <p>Muito bom</p>
+                            <p>Extraordinário</p>
+                        </div>
+                    </div>
+                </fieldset class="grupo">
+                <div class="caixa-de-texto">
+                    <label> Conte um pouco sobre a sua experiencia com nosso café: </label>
+                    
+                    <textarea rows="6" style="width: 28rem" id="experiencia" name="experiencia"></textarea>
+                </div>    
+                <button type="submit" id="botao-avaliacao">Enviar</button>
+            </form>
+        </div>
+    </div>
+   <footer class="footer footer-novidades">
+        <p class="footer-copy"> Copyright &lt;JMR Coffee&gt; 2024 </p>
+        <p class ="footer-autor"> Feito por Joāo M. R. Santos</p>
+    </footer>
+</body>
+</html>
